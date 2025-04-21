@@ -1,32 +1,17 @@
 import Button from "./components/Test.jsx";
-import Urun from "./components/Urun.jsx"; //! burada import etmeyi unuttun
-import Kosullu from "./components/Ornek.jsx";
+import Deneme from "./components/Ornek.jsx";
+import Aladdin from "./components/Urun.jsx";
+import Library from "./components/Map.jsx";
 
-const Product = () => {
-  const price = 786;
-  return (
-    <div>
-      <h2>Cookies</h2>
-      <p>Price: {price} credits</p>
-    </div>
-  );
-};
-
-function App() {
+export default function App() {
   return (
     <>
-      <div>
-        <h1>Title</h1>
-      </div>
-      <Product />
+      <h1>Dilaranın Ayağı</h1>
       <Button />
-      <div>
-        <Urun name="telefon" price={555} />
-        <Urun name="Kulaklık" price={888} />
-      </div>
-      {/* Eklenenleri daha dinamik yapar */}
-      <Kosullu />
+      <img src="" />
+      <Deneme name="Yeşim" about="Ağzını yüzünü yerim" />
+      <Aladdin messages="Benim iki tane kulağım bir taane burnum var" />
+      <Library />
     </>
   );
 }
-export default App;

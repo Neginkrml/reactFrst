@@ -1,23 +1,16 @@
-function Urun(props) {
+const MessageBox = ({ messages }) => {
   return (
-    <div>
-      <h2>{props.name}</h2>
-      <p>Fiyat:{props.price}</p>
-    </div>
+    <>
+      <p>
+        {messages?.length > 10
+          ? "Sizin uzun mesajınız var"
+          : "Sizin kısa mesajınız var"}
+      </p>
+      <p>
+        <strong>Mesaj:</strong>
+        {messages}
+      </p>
+    </>
   );
-}
-export default Urun;
-
-//! BUrada ürünü test.jsx e eklemiştin çekemiyordu sonra Urun.jsx diye yeni sayfaya ekledin
-
-// function Fruits({ name, price }) {
-//   return (
-//     <div>
-//       <h2>{name}</h2>
-//       <p>Fiyat: {price} TL</p>
-//     </div>
-//   );
-// }
-// export default Fruits;
-
-//? BU ŞEKİLDE DE YAZILABİLİR
+};
+export default MessageBox;
