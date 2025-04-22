@@ -1,36 +1,27 @@
-const alertStyles = {
-  margin: 8,
-  padding: "12px 16px",
-  borderRadius: 4,
-  color: "white",
-};
+const Elma = () => {
+  const pCss = {
+    backgroundColor: "pink",
+    color: "white",
+    fontSize: 40,
+    height: "40px",
+    textAlign: "center",
+  };
 
-const gtBgColor = (variant) => {
-  switch (variant) {
-    case "info":
-      return "blue";
-    case "success":
-      return "green";
-    case "error":
-      return "red";
-    case "warning":
-      return "orange";
-    default:
-      throw new Error(`Bu variant tipi desteklenmiyor: ${variant}`);
-  }
-};
-
-const Alert2 = ({ variant, children }) => {
   return (
-    <p
-      style={{
-        ...alertStyles,
-        backgroundColor: gtBgColor(variant),
-      }}
-    >
-      {children}
-    </p>
+    <>
+      <h1
+        style={{
+          backgroundColor: "lightBlue",
+          color: "white",
+          borderRadius: 5,
+          padding: 15,
+        }}
+      >
+        Bu inline css öğreten başlıktır
+      </h1>
+
+      <p style={pCss}> Bu yukarıda const ile tanımlanan Css ile süslenmiştir</p>
+    </>
   );
 };
-
-export default Alert2;
+export default Elma;
