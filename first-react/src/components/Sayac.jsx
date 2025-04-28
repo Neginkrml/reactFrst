@@ -3,11 +3,12 @@ import React, { useState } from "react";
 const Sayac = () => {
   const [number, setNumber] = useState(0);
   const [gece, setGece] = useState(false);
+
   const handleArttır = () => {
     setNumber(number + 1);
   };
   const stil = {
-    backgrounColor: gece ? "black" : "yellow",
+    backgroundColor: gece ? "black" : "yellow",
     color: "white",
   };
 
@@ -18,7 +19,9 @@ const Sayac = () => {
       <button onClick={() => setNumber(number - 1)}>Azalt</button>
       <button onClick={() => setNumber(0)}>Sifirla</button>
       <button onClick={() => setNumber(number + 5)}>5 Arttır</button>
-      <button onClick={() => setGece(!gece)}> Gece/ Gunduz</button>
+      <button onClick={() => setGece(!gece)}>
+        {gece ? "Gunduz yap" : "Gece yap"}
+      </button>
     </div>
   );
 };

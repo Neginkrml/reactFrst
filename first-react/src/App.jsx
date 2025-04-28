@@ -6,6 +6,8 @@ import Handles from "./components/Handles";
 import OnClickComp from "./components/Onclick";
 import NewComp from "./components/İsOpen";
 import Sayac from "./components/Sayac";
+import User from "./components/User";
+import Student from "./components/Student";
 
 export default function App() {
   return (
@@ -16,9 +18,10 @@ export default function App() {
       <Lale />
       <Handles />
       <OnClickComp /> */}
-      <NewComp />
-
+      {/* <NewComp />
       <Sayac />
+      <User /> */}
+      <Student />
     </>
   );
 }
