@@ -1,4 +1,5 @@
 import "./App.css";
+import Effect from "./components/Effect";
 import IsOpen from "./components/IsOpen";
 import Sayac from "./components/Sayac";
 import Student from "./components/Student";
@@ -10,7 +11,9 @@ function App() {
       {/* <IsOpen /> */}
       {/* <Student /> */}
       {/* <Sayac /> */}
-      <User />
+      {/* <User /> */}
+
+      <Effect />
     </>
   );
 }

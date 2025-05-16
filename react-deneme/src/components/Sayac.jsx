@@ -3,6 +3,12 @@ import React, { useState } from "react";
 const Sayac = () => {
   const [number, setNUmber] = useState(0);
   const [gece, setGece] = useState(false);
+  // const [date, setDate] = useState(() => {
+  //   const today = new Date();
+  //   today.setDate(today.getDate() + 7);
+  //   return today;
+  // });
+
   const handleArttır = () => {
     setNUmber(number + 1);
   };
