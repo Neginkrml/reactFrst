@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 const Student = () => {
   const [ogrenciler, setOgrenciler] = useState([
-    { id: 1, ad: "Ali", not: 50 },
-    { id: 2, ad: "Ayşe", not: 60 },
-    { id: 3, ad: "Ozan", not: 95 },
-    { id: 4, ad: "Nurgül", not: 85 },
+    { id: 1, isim: "Gökalp", not: 85 },
+    { id: 2, isim: "Yasin", not: 75 },
+    { id: 3, isim: "Özgür", not: 68 },
+    { id: 4, isim: "Batuhan", not: 95 },
   ]);
 
-  const notArttırma = () => {
+  const notArttirma = () => {
     const notlar = ogrenciler.map((item) => {
       return {
         ...item,
@@ -20,15 +20,16 @@ const Student = () => {
 
   return (
     <div>
-      <h2>Ogrenci Listesi</h2>
+      <h2> Ogrenci Listesi</h2>
       <ul>
         {ogrenciler.map((ogrenci) => (
           <li key={ogrenci.id}>
-            {ogrenci.ad}: {ogrenci.not}
+            {ogrenci.isim}: {ogrenci.not}
           </li>
         ))}
       </ul>
-      <button onClick={notArttırma}>Tüm notlara 10 puan ekle</button>
+
+      <button onClick={notArttirma}> Tüm notlara 10 puan ekle </button>
     </div>
   );
 };
