@@ -1,4 +1,5 @@
 import "./App.css";
+import Zamanlayıcı from "./components/CleanUp";
 import Effect from "./components/Effect";
 import IsOpen from "./components/IsOpen";
 import LocalStorage from "./components/LocalStorge";
@@ -20,6 +21,8 @@ function App() {
       {/* <Modalprnt /> */}
       {/* <LocalStorage /> */}
       {/* <Post /> */}
+
+      {/* <Zamanlayıcı /> */}
     </>
   );
 }
