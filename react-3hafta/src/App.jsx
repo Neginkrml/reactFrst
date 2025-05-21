@@ -1,11 +1,11 @@
 import "./App.css";
 import BirthdaySurprise from "./components/BirdihtaySuprise";
-import CheckBox from "./components/CheckBox";
 import LoginForm from "./components/LoginForm";
 import MyComponent from "./components/MyComponent";
 import SearchBar from "./components/SearchBar";
 
 import Select from "./components/Select";
+import NewLoginForm from "./components/NewLoginForm";
 
 function App() {
   /*const handleLogin = (userData) => {
@@ -20,8 +20,8 @@ function App() {
       {/* <MyComponent /> */}
       {/* <SearchBar /> */}
       {/* <Select /> */}
-      {/* <CheckBox /> */}
-      <BirthdaySurprise />
+      <NewLoginForm />
+      {/* <BirthdaySurprise /> */}
     </>
   );
 }
