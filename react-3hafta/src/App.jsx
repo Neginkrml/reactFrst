@@ -1,5 +1,5 @@
 import "./App.css";
-import BirthdaySurprise from "./components/BirdihtaySuprise";
+
 import LoginForm from "./components/LoginForm";
 import MyComponent from "./components/MyComponent";
 import SearchBar from "./components/SearchBar";
@@ -20,8 +20,7 @@ function App() {
       {/* <MyComponent /> */}
       {/* <SearchBar /> */}
       {/* <Select /> */}
-      <NewLoginForm />
-      {/* <BirthdaySurprise /> */}
+      {/* <NewLoginForm /> */}
     </>
   );
 }
