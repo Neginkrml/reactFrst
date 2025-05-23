@@ -6,6 +6,10 @@ import SearchBar from "./components/SearchBar";
 
 import Select from "./components/Select";
 import NewLoginForm from "./components/NewLoginForm";
+import FirstFormik from "./components/FirstFormik";
+import Formik2 from "./components/Formik2";
+import FormikSelect from "./components/FormikSelect";
+import YupForm from "./components/Yup";
 
 function App() {
   /*const handleLogin = (userData) => {
@@ -21,6 +25,12 @@ function App() {
       {/* <SearchBar /> */}
       {/* <Select /> */}
       {/* <NewLoginForm /> */}
+
+      {/* <FirstFormik /> */}
+      {/* <Formik2 /> */}
+      {/* <FormikSelect /> */}
+
+      <YupForm />
     </>
   );
 }
