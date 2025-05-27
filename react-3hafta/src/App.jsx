@@ -18,8 +18,8 @@ function App() {
 
   return (
     <>
-      {/* <h1>Please login to your account!</h1>
-      <LoginForm handleLogin={handleLogin} /> */}
+      <h1>Please login to your account!</h1>
+      <LoginForm handleLogin={handleLogin} />
 
       {/* <MyComponent /> */}
       {/* <SearchBar /> */}
@@ -30,7 +30,7 @@ function App() {
       {/* <Formik2 /> */}
       {/* <FormikSelect /> */}
 
-      <YupForm />
+      {/* <YupForm /> */}
     </>
   );
 }
