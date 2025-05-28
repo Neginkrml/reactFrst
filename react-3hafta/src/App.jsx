@@ -18,15 +18,15 @@ function App() {
 
   return (
     <>
-      <h1>Please login to your account!</h1>
-      <LoginForm handleLogin={handleLogin} />
+      {/* <h1>Please login to your account!</h1>
+      <LoginForm handleLogin={handleLogin} /> */}
 
       {/* <MyComponent /> */}
       {/* <SearchBar /> */}
       {/* <Select /> */}
       {/* <NewLoginForm /> */}
 
-      {/* <FirstFormik /> */}
+      <FirstFormik />
       {/* <Formik2 /> */}
       {/* <FormikSelect /> */}
 
